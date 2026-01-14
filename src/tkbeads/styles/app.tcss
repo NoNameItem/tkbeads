@@ -1,0 +1,5 @@
+/* Base styles for tkbeads */
+
+Screen {
+    background: $surface;
+}

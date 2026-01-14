@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: tkbeads
+Version: 0.1.0
+Summary: TUI for Beads task tracker
+Requires-Python: >=3.14
+License-File: LICENSE
+Requires-Dist: textual>=0.89
+Dynamic: license-file

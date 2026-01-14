@@ -12,6 +12,8 @@ dev = [
     "pre-commit>=4.0",
     "ruff>=0.9",
     "ty>=0.0.1a9",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
 ]
 
 [tool.ruff]
@@ -50,6 +52,9 @@ select = [
 
 [tool.ruff.format]
 quote-style = "double"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]  # Allow assert in tests
 
 [tool.ty.environment]
 python-version = "3.14"
