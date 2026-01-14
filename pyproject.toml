@@ -1,6 +1,55 @@
 [project]
 name = "tkbeads"
 version = "0.1.0"
-description = "Add your description here"
+description = "TUI for Beads task tracker"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "textual>=0.89",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0",
+    "ruff>=0.9",
+    "ty>=0.0.1a9",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",
+    "I",
+    "UP",
+    "S",
+    "A",
+    "ARG",
+    "B",
+    "C4",
+    "EM",
+    "FURB",
+    "ISC",
+    "INP",
+    "N",
+    "PERF",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "Q",
+    "RET",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ty.environment]
+python-version = "3.14"
